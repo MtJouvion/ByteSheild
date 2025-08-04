@@ -3,122 +3,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Business</title>
+  <title>ByteShield Solutions</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background: #f9f9f9;
+      padding: 0;
+      background-color: #f4f6f8;
       color: #333;
     }
-
     header {
-      background-color: #1e1e1e;
+      background-color: #1a1a1a;
       color: white;
-      padding: 60px 20px;
       text-align: center;
+      padding: 3rem 1rem;
     }
-
-    header h1 {
-      font-size: 3em;
+    h1 {
       margin: 0;
+      font-size: 2.5rem;
     }
-
-    header p {
-      font-size: 1.2em;
-      margin-top: 10px;
+    .tagline {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
     }
-
     .services {
-      padding: 50px 20px;
       display: flex;
+      justify-content: space-around;
       flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
+      padding: 2rem;
     }
-
     .service-button {
       background-color: #007bff;
       color: white;
+      padding: 1rem 2rem;
+      margin: 1rem;
       border: none;
-      padding: 20px 30px;
-      font-size: 1.1em;
       border-radius: 10px;
       cursor: pointer;
+      font-size: 1.1rem;
       transition: background-color 0.3s ease;
     }
-
     .service-button:hover {
       background-color: #0056b3;
     }
-
-    footer {
-      background-color: #f1f1f1;
-      padding: 40px 20px;
+    .contact {
+      background-color: #eaeaea;
+      padding: 2rem;
       text-align: center;
     }
-
-    footer h2 {
-      margin-bottom: 20px;
-    }
-
-    form input,
-    form textarea {
-      width: 80%;
-      max-width: 400px;
-      padding: 10px;
-      margin: 10px auto;
-      display: block;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    form button {
-      padding: 10px 20px;
-      background-color: #28a745;
+    footer {
+      background-color: #1a1a1a;
       color: white;
-      border: none;
-      border-radius: 5px;
-      font-size: 1em;
-      cursor: pointer;
-      margin-top: 10px;
-    }
-
-    form button:hover {
-      background-color: #218838;
-    }
-
-    @media (max-width: 600px) {
-      .service-button {
-        width: 80%;
-      }
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>My Business Name</h1>
-    <p>Your trusted service provider</p>
+    <h1>ByteShield Solutions</h1>
+    <p class="tagline">Affordable cybersecurity solutions for small businesses</p>
   </header>
 
   <section class="services">
-    <button class="service-button">Web Design</button>
-    <button class="service-button">SEO Services</button>
-    <button class="service-button">Consulting</button>
+    <button class="service-button" onclick="alert('Learn more about Vulnerability Scanning')">
+      Vulnerability Scanning
+    </button>
+    <button class="service-button" onclick="alert('Learn more about Security Hardening')">
+      Security Hardening
+    </button>
+    <button class="service-button" onclick="alert('Learn more about Security Audits')">
+      Security Audits
+    </button>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@byteshieldsecurity.com</p>
+    <p>Location: Bloomington, IN</p>
   </section>
 
   <footer>
-    <h2>Contact Us</h2>
-    <form action="mailto:your@email.com" method="POST" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="4" placeholder="Your Message"></textarea>
-      <button type="submit">Send</button>
-    </form>
+    &copy; 2025 ByteShield Solutions. All rights reserved.
   </footer>
 
 </body>
