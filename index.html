@@ -28,22 +28,45 @@
     }
     .services {
       display: flex;
-      justify-content: space-around;
       flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
       padding: 2rem;
     }
-    .service-button {
+    .service-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      max-width: 300px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+    .service-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .service-card h3 {
+      margin: 1rem 0 0.5rem;
+    }
+    .service-card p {
+      padding: 0 1rem;
+      font-size: 0.95rem;
+    }
+    .service-card a {
+      display: inline-block;
+      margin: 1rem;
+      padding: 0.5rem 1rem;
       background-color: #007bff;
       color: white;
-      padding: 1rem 2rem;
-      margin: 1rem;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      font-size: 1.1rem;
-      transition: background-color 0.3s ease;
+      text-decoration: none;
+      border-radius: 5px;
     }
-    .service-button:hover {
+    .service-card a:hover {
       background-color: #0056b3;
     }
     .contact {
@@ -68,15 +91,28 @@
   </header>
 
   <section class="services">
-    <button class="service-button" onclick="alert('Learn more about Vulnerability Scanning')">
-      Vulnerability Scanning
-    </button>
-    <button class="service-button" onclick="alert('Learn more about Security Hardening')">
-      Security Hardening
-    </button>
-    <button class="service-button" onclick="alert('Learn more about Security Audits')">
-      Security Audits
-    </button>
+
+    <div class="service-card">
+      <img src="https://via.placeholder.com/300x180?text=Vulnerability+Scan" alt="Vulnerability Scanning">
+      <h3>Vulnerability Scanning</h3>
+      <p>Identify weaknesses in your systems before attackers do. Regular scanning ensures up-to-date defenses.</p>
+      <a href="vulnerability.html">Learn More</a>
+    </div>
+
+    <div class="service-card">
+      <img src="https://via.placeholder.com/300x180?text=Security+Hardening" alt="Security Hardening">
+      <h3>Security Hardening</h3>
+      <p>Lock down your systems by eliminating common misconfigurations and applying industry best practices.</p>
+      <a href="hardening.html">Learn More</a>
+    </div>
+
+    <div class="service-card">
+      <img src="https://via.placeholder.com/300x180?text=Security+Audit" alt="Security Audit">
+      <h3>Security Audits</h3>
+      <p>Evaluate your overall security posture and compliance through thorough reviews and actionable reporting.</p>
+      <a href="audit.html">Learn More</a>
+    </div>
+
   </section>
 
   <section class="contact">
