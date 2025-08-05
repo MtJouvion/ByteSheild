@@ -1,43 +1,88 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Security Hardening | ByteShield Solutions</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>ByteShield Solutions</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="container header-flex">
+      <h1>ByteShield Solutions</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="vulnerability.html">Vulnerability Scanning</a>
+        <a href="hardening.html" class="active">Security Hardening</a>
+        <a href="audit.html">Security Audits</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="service-detail">
-      <h2>Security Hardening</h2>
-      <img src="SecHardeningPic2.jpg" alt="Security Hardening">
-      <p>
-        Our Security Hardening service enhances the resilience of your systems by implementing proven configurations and reducing the attack surface. We focus on minimizing vulnerabilities across endpoints, servers, and networks.
-      </p>
+  <div class="banner slim-banner">
+    <img src="images/SecHardeningPic2.jpg" alt="Security Hardening Banner" class="banner-image" />
+    <div class="banner-text">
+      <h2>Security Hardening Services</h2>
+    </div>
+  </div>
 
-      <h3>What’s Included:</h3>
-      <ul>
-        <li>Operating system and software configuration reviews</li>
-        <li>Firewall and port lockdowns</li>
-        <li>Password and authentication policy tuning</li>
-        <li>System hardening documentation</li>
-      </ul>
-
-      <a href="#contact" class="cta-button">Secure Your Systems Now</a>
+  <main class="container professional-layout">
+    <section class="card">
+      <h2>Why Security Hardening Matters</h2>
+      <p>Minimize your systems' attack surface and boost resilience by eliminating vulnerabilities and misconfigurations. Perfect for small businesses and startups seeking strong security foundations.</p>
     </section>
+
+    <section class="card">
+      <h2>Included in Your Service</h2>
+      <ul class="styled-list">
+        <li>OS and application configuration reviews</li>
+        <li>Firewall setup and port restrictions</li>
+        <li>Password policy and MFA implementation</li>
+        <li>Complete hardening documentation</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Business Benefits</h2>
+      <ul class="styled-list">
+        <li>Improve system uptime and security</li>
+        <li>Prevent common misconfigurations</li>
+        <li>Align with security best practices</li>
+        <li>Reduce risk of exploitation</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Our 4-Step Approach</h2>
+      <div class="process-grid">
+        <div class="process-step">
+          <h3>1. Assessment</h3>
+          <p>We evaluate current system settings, services, and risks.</p>
+        </div>
+        <div class="process-step">
+          <h3>2. Planning</h3>
+          <p>We create a tailored hardening strategy based on your environment.</p>
+        </div>
+        <div class="process-step">
+          <h3>3. Implementation</h3>
+          <p>We apply secure configurations, patches, and firewall rules.</p>
+        </div>
+        <div class="process-step">
+          <h3>4. Documentation</h3>
+          <p>You receive a full hardening report and ongoing support guidance.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="centered">
+      <a href="#contact" class="cta-button">Secure Your Systems Now</a>
+    </div>
   </main>
 
   <footer id="contact">
-    <h2>Contact Us</h2>
     <p>Email: info@byteshieldsolutions.com</p>
     <p>Phone: (123) 456-7890</p>
+    <p>&copy; 2025 ByteShield Solutions. All rights reserved.</p>
   </footer>
 </body>
 </html>
