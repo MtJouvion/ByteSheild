@@ -26,18 +26,27 @@
       font-size: 1.2rem;
       margin-top: 0.5rem;
     }
+    h2 {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 2rem;
+    }
     .services {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 2rem;
       padding: 2rem;
+    }
+    .service-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      max-width: 1000px;
+      width: 100%;
     }
     .service-card {
       background-color: white;
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      max-width: 300px;
       overflow: hidden;
       transition: transform 0.3s ease;
       text-align: center;
@@ -81,6 +90,16 @@
       padding: 1rem;
       font-size: 0.9rem;
     }
+    @media (max-width: 900px) {
+      .service-container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (max-width: 600px) {
+      .service-container {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
@@ -90,60 +109,60 @@
     <p class="tagline">Affordable cybersecurity solutions for small businesses</p>
   </header>
 
-  <section class="services">
   <h2>Our Services</h2>
-  <div class="service-container">
+  <section class="services">
+    <div class="service-container">
 
-    <!-- Vulnerability Scanning -->
-    <div class="service-card">
-      <img src="VulScanPic1.jpg" alt="Vulnerability Scanning">
-      <h3>Vulnerability Scanning</h3>
-      <p>Identify system weaknesses using automated tools and industry databases.</p>
-      <a href="vulnerability.html">Learn More</a>
+      <!-- Vulnerability Scanning -->
+      <div class="service-card">
+        <img src="VulScanPic1.png" alt="Vulnerability Scanning">
+        <h3>Vulnerability Scanning</h3>
+        <p>Identify system weaknesses using automated tools and industry databases.</p>
+        <a href="vulnerability.html">Learn More</a>
+      </div>
+
+      <!-- Security Hardening -->
+      <div class="service-card">
+        <img src="SecHardeningPic2.png" alt="Security Hardening">
+        <h3>Security Hardening</h3>
+        <p>Fortify systems by eliminating unnecessary services and applying best-practice configurations.</p>
+        <a href="hardening.html">Learn More</a>
+      </div>
+
+      <!-- Security Audits -->
+      <div class="service-card">
+        <img src="SecAuditPic3.png" alt="Security Audits">
+        <h3>Security Audits</h3>
+        <p>Evaluate your overall security posture and compliance through thorough reviews and actionable reporting.</p>
+        <a href="audit.html">Learn More</a>
+      </div>
+
+      <!-- Phishing Simulation -->
+      <div class="service-card">
+        <img src="PhishingPic4.png" alt="Phishing Simulation">
+        <h3>Phishing Simulation & Awareness Training</h3>
+        <p>Test your team's ability to detect phishing and boost their security awareness with interactive training.</p>
+        <a href="phishing.html">Learn More</a>
+      </div>
+
+      <!-- Password Management -->
+      <div class="service-card">
+        <img src="PassManagePic5.png" alt="Password Management">
+        <h3>Password Management & Setup</h3>
+        <p>Implement secure password practices using password managers and multi-factor authentication setups.</p>
+        <a href="passwords.html">Learn More</a>
+      </div>
+
+      <!-- Incident Response Planning -->
+      <div class="service-card">
+        <img src="IncidentResponsePic6.png" alt="Incident Response Planning">
+        <h3>Basic Incident Response Planning</h3>
+        <p>Prepare for cyber threats with tailored incident response plans, workflows, and escalation guidance.</p>
+        <a href="response.html">Learn More</a>
+      </div>
+
     </div>
-
-    <!-- Security Hardening -->
-    <div class="service-card">
-      <img src="SecHardeningPic2.jpg" alt="Security Hardening">
-      <h3>Security Hardening</h3>
-      <p>Fortify systems by eliminating unnecessary services and applying best-practice configurations.</p>
-      <a href="hardening.html">Learn More</a>
-    </div>
-
-    <!-- Security Audits -->
-    <div class="service-card">
-      <img src="SecAuditPic3.jpg" alt="Security Audits">
-      <h3>Security Audits</h3>
-      <p>Evaluate your overall security posture and compliance through thorough reviews and actionable reporting.</p>
-      <a href="audit.html">Learn More</a>
-    </div>
-
-    <!-- Phishing Simulation & Awareness Training -->
-    <div class="service-card">
-      <img src="PhishingPic4.png" alt="Phishing Simulation">
-      <h3>Phishing Simulation & Awareness Training</h3>
-      <p>Test your team's ability to detect phishing and boost their security awareness with interactive training.</p>
-      <a href="phishing.html">Learn More</a>
-    </div>
-
-    <!-- Password Management and Setup -->
-    <div class="service-card">
-      <img src="PassManagePic5.png" alt="Password Management">
-      <h3>Password Management & Setup</h3>
-      <p>Implement secure password practices using password managers and multi-factor authentication setups.</p>
-      <a href="passwords.html">Learn More</a>
-    </div>
-
-    <!-- Basic Incident Response Planning -->
-    <div class="service-card">
-      <img src="IncidentResponsePic6.png" alt="Incident Response Planning">
-      <h3>Basic Incident Response Planning</h3>
-      <p>Prepare for cyber threats with tailored incident response plans, workflows, and escalation guidance.</p>
-      <a href="response.html">Learn More</a>
-    </div>
-
-  </div>
-</section>
+  </section>
 
   <section class="contact">
     <h2>Contact Us</h2>
