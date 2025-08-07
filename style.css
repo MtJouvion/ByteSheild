@@ -172,20 +172,21 @@ footer {
   margin-bottom: 1rem;
   border-radius: 6px;
 }
-.package-list {
-  list-style: none;
+.styled-list {
   padding-left: 1.2rem;
+  list-style: none;
 }
 
-.package-list li {
-  position: relative;
+.styled-list li {
   margin-bottom: 0.5rem;
+  position: relative;
 }
 
-.package-list li::before {
+.styled-list li::before {
   content: "✔";
   position: absolute;
   left: -1.2rem;
-  color: black;
+  color: #007bff;
   font-weight: bold;
 }
+
